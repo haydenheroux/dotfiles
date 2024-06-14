@@ -1,0 +1,37 @@
+dwm.normbordercolor: #282a36
+dwm.normbgcolor: #282a36
+dwm.normfgcolor: #f8f8f2
+dwm.selbordercolor: #f8f8f2
+dwm.selbgcolor: #f8f8f2
+dwm.selfgcolor: #282a36
+
+dmenu.background: #282a36
+dmenu.foreground: #f8f8f2
+dmenu.selbackground: #f8f8f2
+dmenu.selforeground: #282a36
+
+tabbed.normbgcolor: #282a36
+tabbed.normfgcolor: #f8f8f2
+tabbed.selbgcolor: #f8f8f2
+tabbed.selfgcolor: #282a36
+tabbed.urgbgcolor: #ff0000
+tabbed.urgfgcolor: #00ff00
+
+st.color0: #000000
+st.color1: #ff5555
+st.color2: #50fa7b
+st.color3: #f1fa8c
+st.color4: #bd93f9
+st.color5: #ff79c6
+st.color6: #8be9fd
+st.color7: #bbbbbb
+st.color8: #44475a
+st.color9: #ff5555
+st.color10: #50fa7b
+st.color11: #f1fa8c
+st.color12: #bd93f9
+st.color13: #ff79c6
+st.color14: #8be9fd
+st.color15: #ffffff
+st.background: #282a36
+st.foreground: #f8f8f2
