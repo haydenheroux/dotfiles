@@ -2,5 +2,6 @@
 
 xrdb ~/.Xresources
 
+dunst &
 dwmblocks &
 dwm
