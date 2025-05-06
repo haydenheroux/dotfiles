@@ -4,8 +4,10 @@ export COLORTERM=truecolor
 bindkey "^[[H"  beginning-of-line
 bindkey "^[[4~" end-of-line
 bindkey "^[[3~" delete-char
+bindkey "^[b" backward-word
+bindkey "^[f" forward-word
 
-export PATH=$PATH:$HOME/go/bin
+export EDITOR="nvim"
 
 alias ls="exa -s type"
 alias bq="batquery -ip /sys/class/power_supply/BAT1/"
@@ -13,7 +15,7 @@ alias light="sudo light /sys/class/backlight/amdgpu_bl1/"
 
 setopt PROMPT_SUBST
 source /usr/share/git/git-prompt.sh
-PS1='$(__git_ps1 | sed "/./s/^[[:space:]]*\(.*\)$/\1 /")%B%F{blue}%~%f%b '
+PS1='%(1j.󰒲 .)$(__git_ps1 | sed "/./s/^[[:space:]]*\(.*\)$/\1 /")%B%F{blue}%~%f%b '
 
 export FZF_DEFAULT_OPTS=" \
 --color=bg+:#363a4f,bg:#24273a,spinner:#f4dbd6,hl:#ed8796 \
