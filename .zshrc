@@ -10,8 +10,8 @@ bindkey "^[f" forward-word
 export EDITOR="nvim"
 
 alias ls="exa -s type"
-alias bq="batquery -ip /sys/class/power_supply/BAT1/"
-alias light="sudo light /sys/class/backlight/amdgpu_bl1/"
+#alias bq="batquery -ip /sys/class/power_supply/BAT1/"
+#alias light="sudo light /sys/class/backlight/amdgpu_bl1/"
 
 setopt PROMPT_SUBST
 source /usr/share/git/git-prompt.sh
