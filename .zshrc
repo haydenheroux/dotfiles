@@ -19,3 +19,11 @@ alias ls="exa -s type"
 alias bq="batquery -ip /sys/class/power_supply/BAT1/"
 alias light="sudo light /sys/class/backlight/amdgpu_bl1/"
 alias start="startx"
+
+autoload -Uz compinit
+compinit
+zstyle ':completion:*' menu select
+zstyle ':completion:*' matcher-list 'm:{a-z}={A-Za-z}'
+source <(fzf --zsh)
+# Default location for AUR install
+source /usr/share/zsh/plugins/fzf-tab/fzf-tab.plugin.zsh
