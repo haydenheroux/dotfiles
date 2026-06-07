@@ -1,0 +1,8 @@
+#!/bin/bash
+BATTINFO=$(acpi -b)
+PERCENTAGE=$(batquery /sys/class/power_supply/BAT1 -p)
+
+if [[ $(echo $BATTINFO | grep Discharging) ]] && [ "$PERCENTAGE" -lt 20 ]; then
+    dunstify -u critical "Low Battery" "${PERCENTAGE}% remaining"
+fi
+

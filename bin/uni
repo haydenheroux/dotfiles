@@ -1,0 +1,28 @@
+#!/bin/python
+
+import sys
+import subprocess
+
+TABLE = {
+    "''": "“",
+    "``": "”",
+    "--": "–",
+    "---": "—",
+}
+
+
+def unicode_and_join(strs: list[str]) -> str:
+    uncide_strs = [unicode for unicode in [TABLE.get(s) for s in strs] if unicode]
+    return " ".join(uncide_strs)
+
+
+def copy_to_clipboard(s: str) -> None:
+    if not s:
+        return None
+    subprocess.run(f"echo '{s}' | xclip -i -selection clipboard", shell=True)
+
+
+if __name__ == "__main__":
+    args = sys.argv
+    if len(args) > 1:
+        copy_to_clipboard(unicode_and_join(args[1:]))

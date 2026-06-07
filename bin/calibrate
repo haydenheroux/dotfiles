@@ -1,0 +1,3 @@
+#!/bin/sh
+
+xcalib -d :0 -s -v ~/dotfiles/fw13.icm
